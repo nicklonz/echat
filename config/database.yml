@@ -15,6 +15,7 @@
 # gem 'pg'
 #
 default: &default
+  host: localhost
   adapter: postgresql
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
@@ -83,3 +84,7 @@ production:
   database: echat_nl_production
   username: echat_nl
   password: <%= ENV['ECHAT_NL_DATABASE_PASSWORD'] %>
+
+
+
+
